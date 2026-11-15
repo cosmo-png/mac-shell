@@ -20,7 +20,7 @@ Lean on purpose: no settings app, no widgets, no polling in the background.
 Needs Hyprland, [Quickshell](https://quickshell.org) and a recent Arch-based system (tested target: CachyOS).
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/macshell.git
+git clone https://github.com/cosmo-png/macshell.git
 cd macshell
 bash install.sh --deps     # --deps installs dependencies with pacman, skip it if you have them
 ```
