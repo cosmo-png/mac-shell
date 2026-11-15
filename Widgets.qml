@@ -10,8 +10,8 @@ PanelWindow {
 
     visible: fade.opacity > 0
     anchors { top: true; right: true }
-    margins { top: Theme.barHeight + 18; right: 22 }
-    implicitWidth: 300
+    margins { top: Theme.barHeight + 12; right: 14 }
+    implicitWidth: 276
     implicitHeight: col.implicitHeight
     exclusionMode: ExclusionMode.Ignore
     color: "transparent"
@@ -26,7 +26,7 @@ PanelWindow {
 
         Column {
             id: col
-            spacing: 14
+            spacing: 10
             ClockCard { order: 0 }
             StatsCard { order: 1 }
             CalendarCard { order: 2 }

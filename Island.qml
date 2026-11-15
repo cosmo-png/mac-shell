@@ -27,7 +27,7 @@ PanelWindow {
         : (Media.playing ? "compact" : "idle"))
 
     anchors.top: true
-    implicitWidth: 400
+    implicitWidth: 360
     implicitHeight: 130
     exclusionMode: ExclusionMode.Ignore
     color: "transparent"
@@ -38,7 +38,7 @@ PanelWindow {
         id: pill
         anchors.horizontalCenter: parent.horizontalCenter
         y: 2
-        width: win.mode === "open" ? 380 : (win.mode === "alert" ? 340 : (win.mode === "compact" ? 230 : 44))
+        width: win.mode === "open" ? 340 : (win.mode === "alert" ? 310 : (win.mode === "compact" ? 220 : 44))
         height: win.mode === "open" ? 112 : (win.mode === "alert" ? 60 : (win.mode === "compact" ? 28 : 0))
         radius: Math.min(height / 2, 24)
         color: "black"

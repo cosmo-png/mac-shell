@@ -7,9 +7,9 @@ PanelWindow {
     id: win
 
     property var shell
-    readonly property int icon: 46
-    readonly property int gap: 10
-    readonly property int pad: 10
+    readonly property int icon: 40
+    readonly property int gap: 8
+    readonly property int pad: 8
 
     // pinned apps first, then anything else that is running
     property var items: build()
@@ -54,8 +54,8 @@ PanelWindow {
 
     anchors.bottom: true
     margins.bottom: 6
-    implicitWidth: pill.width + 200
-    implicitHeight: pill.height + 46
+    implicitWidth: pill.width + 80
+    implicitHeight: pill.height + 42
     exclusiveZone: pill.height + 12
     color: "transparent"
     mask: Region { item: hit }
@@ -66,7 +66,7 @@ PanelWindow {
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         width: pill.width
-        height: pill.height + 44
+        height: pill.height + 40
 
         HoverHandler { id: hover }
 

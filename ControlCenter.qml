@@ -30,7 +30,7 @@ PanelWindow {
     visible: open || card.opacity > 0.01
     anchors { top: true; right: true }
     margins { top: Theme.barHeight + 6; right: 10 }
-    implicitWidth: 360
+    implicitWidth: 340
     implicitHeight: body.implicitHeight + 24
     exclusionMode: ExclusionMode.Ignore
     color: "transparent"
@@ -218,7 +218,7 @@ PanelWindow {
                 id: list
                 visible: count > 0
                 width: body.width
-                height: Math.min(contentHeight, 280)
+                height: Math.min(contentHeight, 150)
                 clip: true
                 spacing: 8
                 verticalLayoutDirection: ListView.BottomToTop

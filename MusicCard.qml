@@ -4,7 +4,7 @@ import QtQuick
 
 Card {
     id: c
-    width: 300
+    width: 276
     height: 100
 
     readonly property var player: Media.player
@@ -13,8 +13,8 @@ Card {
     visible: player !== null
 
     ClippingRectangle {
-        x: 14; y: 14
-        width: 72; height: 72
+        x: 12; y: 16
+        width: 66; height: 66
         radius: 14
         color: Qt.rgba(1, 1, 1, 0.10)
         Image {
@@ -29,14 +29,14 @@ Card {
     }
 
     Column {
-        x: 98; y: 16
-        width: parent.width - 98 - 14
+        x: 88; y: 16
+        width: parent.width - 102
         Txt { text: c.player ? c.player.trackTitle : ""; font.pixelSize: 15; font.weight: Font.DemiBold; width: parent.width }
         Txt { text: c.player ? c.player.trackArtist : ""; font.pixelSize: 12; color: Theme.sub; width: parent.width }
     }
 
     Row {
-        x: 98; y: 62
+        x: 88; y: 62
         height: 20
         spacing: 3
         Repeater {
@@ -54,9 +54,9 @@ Card {
     }
 
     Row {
-        anchors { right: parent.right; rightMargin: 16 }
+        anchors { right: parent.right; rightMargin: 12 }
         y: 66
-        spacing: 14
+        spacing: 10
         Txt {
             text: "\u25C0\u25C0"
             MouseArea { anchors.fill: parent; anchors.margins: -6; onClicked: c.player.previous() }

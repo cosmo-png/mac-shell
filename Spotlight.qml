@@ -108,7 +108,7 @@ PanelWindow {
 
     Glass {
         id: card
-        width: 640
+        width: Math.min(640, parent.width - 32)
         height: 58 + (win.results.length > 0 ? win.results.length * 46 + 12 : 0)
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.2

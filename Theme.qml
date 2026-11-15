@@ -4,6 +4,10 @@ import QtQuick
 
 // Everything you are likely to tweak lives here.
 Singleton {
+    // Layout tuned for the common HP ProBook 450 G2 panel (1366x768 at 100% scaling).
+    // The design remains usable on larger panels; these are conservative desktop dimensions.
+    readonly property int targetWidth: 1366
+    readonly property int targetHeight: 768
     readonly property string fontFamily: "Inter"
     readonly property color text: Qt.rgba(1, 1, 1, 0.92)
     readonly property color sub: Qt.rgba(1, 1, 1, 0.58)
@@ -24,11 +28,11 @@ Singleton {
     readonly property color hairline: Qt.rgba(1, 1, 1, 0.16)
     readonly property color fill: Qt.rgba(1, 1, 1, 0.10)
     readonly property color fillHover: Qt.rgba(1, 1, 1, 0.17)
-    readonly property real radius: 18
-    readonly property int barHeight: 26
-    readonly property real barAlpha: 0.22                            // 0 = fully transparent menu bar
+    readonly property real radius: 16
+    readonly property int barHeight: 28
+    readonly property real barAlpha: 0.28                            // 0 = fully transparent menu bar
     readonly property bool screenCorners: true                       // rounded screen corners
-    readonly property real screenRadius: 14
+    readonly property real screenRadius: 10
     readonly property bool islandAlerts: true                        // new notifications pop the island open
     readonly property bool clock24: false                            // widgets clock: true for 24h
     readonly property string clockFormat: "ddd MMM d   h:mm AP"      // "ddd MMM d   HH:mm" for 24h

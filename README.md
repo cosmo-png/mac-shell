@@ -17,11 +17,14 @@ Lean on purpose: no settings app, no widgets, no polling in the background.
 
 ## Install
 
+The default layout is tuned for a 1366×768 display at 100% scaling, a common resolution on the HP ProBook 450 G2. On a Full HD panel, the same layout remains centered and compact.
+
+
 Needs Hyprland, [Quickshell](https://quickshell.org) and a recent Arch-based system (tested target: CachyOS).
 
 ```bash
-git clone https://github.com/cosmo-png/macshell.git
-cd macshell
+git clone https://github.com/cosmo-png/mac-shell.git
+cd mac-shell
 bash install.sh --deps     # --deps installs dependencies with pacman, skip it if you have them
 ```
 

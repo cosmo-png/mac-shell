@@ -45,9 +45,9 @@ PanelWindow {
 
     // ---------------- left: logo, active app, workspaces
     Row {
-        anchors { left: parent.left; leftMargin: 14 }
+        anchors { left: parent.left; leftMargin: 10 }
         height: parent.height
-        spacing: 14
+        spacing: 9
 
         Rectangle {
             width: 14; height: 14; radius: 4
@@ -113,7 +113,7 @@ PanelWindow {
             anchors.verticalCenter: parent.verticalCenter
             text: bar.appName()
             font.weight: Font.DemiBold
-            width: Math.min(implicitWidth, 260)
+            width: Math.min(implicitWidth, 150)
         }
 
         Row {
@@ -141,9 +141,9 @@ PanelWindow {
 
     // ---------------- right: tray, battery, control center, clock
     Row {
-        anchors { right: parent.right; rightMargin: 14 }
+        anchors { right: parent.right; rightMargin: 10 }
         height: parent.height
-        spacing: 14
+        spacing: 8
 
         Row {
             anchors.verticalCenter: parent.verticalCenter

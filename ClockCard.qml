@@ -3,15 +3,15 @@ import QtQuick
 
 Card {
     id: c
-    width: 300
-    height: 150
+    width: 276
+    height: 112
 
     SystemClock { id: clk; precision: SystemClock.Seconds }
 
     Column {
         x: 22
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset: -8
+        anchors.verticalCenterOffset: -5
         spacing: 0
 
         Row {
@@ -19,24 +19,24 @@ Card {
             Txt {
                 id: time
                 text: Qt.formatDateTime(clk.date, Theme.clock24 ? "HH:mm" : "h:mm")
-                font.pixelSize: 66
+                font.pixelSize: 52
                 font.weight: Font.Light
             }
             Txt {
                 visible: !Theme.clock24
                 anchors.baseline: time.baseline
                 text: Qt.formatDateTime(clk.date, "AP")
-                font.pixelSize: 20
+                font.pixelSize: 17
                 color: Theme.sub
             }
         }
-        Txt { text: Qt.formatDateTime(clk.date, "dddd, MMMM d"); font.pixelSize: 15; color: Theme.sub }
+        Txt { text: Qt.formatDateTime(clk.date, "dddd, MMMM d"); font.pixelSize: 13; color: Theme.sub }
     }
 
     // seconds line
     Rectangle {
-        x: 22; y: parent.height - 24
-        width: parent.width - 44; height: 3; radius: 1.5
+        x: 20; y: parent.height - 18
+        width: parent.width - 40; height: 3; radius: 1.5
         color: Qt.rgba(1, 1, 1, 0.10)
         Rectangle {
             height: parent.height; radius: 1.5

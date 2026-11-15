@@ -4,8 +4,8 @@ import QtQuick
 
 Card {
     id: c
-    width: 300
-    height: 150
+    width: 276
+    height: 112
 
     property real cpu: 0
     property real ram: 0
